@@ -1,0 +1,497 @@
+/* Eléments principaux de la page */
+body{
+    background-image: url('../images/fond_jaune.png');
+    background-size: cover;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    display: flex;
+    height: 300%;
+    justify-content: center;
+} 
+
+#bloc_page{
+    width: 900px;
+    margin: auto;
+} 
+
+section h1, footer h1, nav a{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+/* END Eléments principaux de la page */
+
+/* Header */
+header{
+    background: url('..//images/separateur.png') repeat-x bottom;
+    padding-bottom: 20px;
+    
+} 
+
+#titre_principal{
+    display: inline-block;
+}
+
+header h1{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+} 
+
+#logo, header h1{
+    display: inline-block;
+    margin-bottom: 0px;
+} 
+
+header h2{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+/* END Header */
+
+/* Navigation */
+nav{
+    display: inline-block;
+    width: 740px;
+    text-align: right;
+    
+} 
+
+nav ul {
+    list-style-type: none;
+} 
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+} 
+
+nav a {
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+} 
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+/* END Navigation */
+
+Bannière */
+#banniere_image {
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('../images/sanfrancisco.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+    } 
+    
+/* END Bannière
+
+/* Corps */
+article, aside{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+
+article{
+    width: 625px;
+    margin-right: 15px;
+}
+
+.ico_categorie{
+    vertical-align: middle;
+    margin-right: 8px;
+    height: 40px;
+} 
+
+article p{
+    font-size: 15px;
+} 
+
+aside{
+    position: relative;
+    width: 235px;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+aside p
+{
+    color: #fff;
+}
+
+#fleche_bulle{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+} 
+
+#photo_zozor{
+    text-align: center;
+} 
+
+#photo_zozor img{
+    border: 1px solid #181818;
+} 
+aside img{
+    margin-right: 5px;
+}
+
+/* END CORPS*/
+
+/* Footer */
+footer
+{
+background: url('images/ico_top.png') no-repeat top center,
+url('../images/separateur.png') repeat-x top,url('images/ombre.png')
+repeat-x top;
+padding-top: 25px;
+}
+footer p, footer ul
+{
+font-size: 14px;
+}
+footer h1
+{
+font-size: 24px;
+}
+#tweet, #mes_photos, #mes_amis
+{
+display: inline-block;
+}
+#tweet
+{
+width: 30%;
+
+}
+
+div#mes_photos{
+     width: 31%;
+
+}
+
+#mes_photos img
+{
+border: 1px solid #181818;
+margin-right: 2px;
+height:50px;
+}
+
+
+#mes_amis
+{
+width: 31%;
+}
+
+#mes_amis ul
+{
+display: inline-block;
+vertical-align: top;
+margin-top: 0;
+width: 48%;
+list-style-image: url('images/ico_liensexterne.png');
+padding-left: 2px;
+}
+#mes_amis a
+{
+text-decoration: none;
+color: #760001;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.containeur
+{
+    position: relative;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    display: flex;
+    align-content: center;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.containeur .left_side
+{
+    position: relative;
+    background: #e0eb4c;
+    padding: 40px;
+}
+
+.profiletext
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profiletext .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profiletext .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profiletext h2
+{
+    color: #000;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profiletext h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo 
+{
+    padding-top: 40px;
+}
+
+.title
+
+{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo  ul
+{
+    position: relative;
+}
+
+.contactInfo  ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li img
+{
+    height: 20px;
+    font-size: 18px;
+}
+
+.contactInfo ul li span
+{
+    color: black;
+    font-weight: 300;
+}
+
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.contactInfo.education h5
+{
+    color: black;
+    font-family: 500;
+    padding: 5px;
+}
+
+.contactInfo.education h4:nth-child(2)
+{
+    color: black;
+    font-weight: 500;
+}
+
+.contactInfo.education h4
+{
+    color: black;
+    font-weight: 500;
+}
+
+.contactInfo.langue .pourcent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.langue .pourcent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:  #fff;
+}
+
+.containeur .right_side
+{
+    position: relative;
+    background: #fff;
+    padding: 100px;
+}
+
+.about
+{
+    margin-bottom: 50px;
+}
+
+.about:last-child
+{
+    margin-bottom: 0;  
+}
+
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p
+{
+    color: #333;
+}
+
+.about.box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+
+.about .box.year_company
+{
+    min-height: 150px;
+
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color:  #28291e9a;
+    font-size: 16px;
+}
+
+.tiile2 .box
+{
+    padding: 1000px;
+}
+
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .box .pourcent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #F0F0F0;
+}
+
+.skills .box .pourcent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:  #e0eb4c;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #e0eb4c; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #e0eb4c;
+    padding: 20px;
+  }
